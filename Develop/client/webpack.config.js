@@ -22,7 +22,14 @@ module.exports = () => {
         template: './src/index.html',
         filename: 'index.html',
       }),
-      
+      new WebpackPwaManifest({
+        name: 'My Progressive Web App',
+        short_name: 'My PWA',
+        description: 'My Progressive Web App Description',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        icons: [
+          {
     ],
 
     module: {
